@@ -8,10 +8,10 @@ spring:
   rabbitmq:
     addresses: ${CLOUDAMQP_URL}
   mail:
-    host: smtp.mailtrap.io
-    port: 587
-    username: 6eebd790c23f5d
-    password: 82c0281b88f4ef
+    host: ${HOST_SMTP}
+    port: ${SMTP_PORT}
+    username: ${SMTP_USERNAME}
+    password: ${SMTP_PASSWORD}
     properties:
       mail:
         smtp:
