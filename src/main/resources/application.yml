@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: emaildispatcher
+  rabbitmq:
+    addresses: ${CLOUDAMQP_URL}
+  mail:
+    host: smtp.mailtrap.io
+    port: 587
+    username: 6eebd790c23f5d
+    password: 82c0281b88f4ef
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
